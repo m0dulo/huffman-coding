@@ -1,7 +1,0 @@
-include(CMakeToolsHelpers OPTIONAL)
-cmake_minimum_required(VERSION 2.8)
-project(Huffman)
-aux_source_directory(. DIR_ROOT_SRCS)
-add_subdirectory(Lib)
-add_executable(Huffman main.cpp ${DIR_ROOT_SRCS})
-target_link_libraries(Huffman HuffmanLib)
